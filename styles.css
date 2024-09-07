@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro y opaco */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Cambia el color del enlace en el hover */
+}
+
+/* Estilo del hero */
+#hero {
+    background: rgba(0, 0, 0, 0.5) url('./assets/hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Estilo principal de secciones */
+main {
+    padding: 2rem;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: rgba(255, 99, 71, 0.8); /* Color de fondo opaco */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 99, 71, 1); /* Cambia el color en el hover */
+}
+
+/* Estilo para secciones de contenido adicionales ocultos */
+.hidden {
+    display: none;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: rgba(212, 201, 201, 0.9); /* Fondo blanco opaco */
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+section ul {
+    margin-bottom: 1rem;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro y opaco */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Estilo general para las imágenes en fila */
+.image-row {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en la fila si es necesario */
+    gap: 1rem; /* Espacio entre las imágenes */
+}
+
+/* Estilo individual de cada imagen */
+.image-row img {
+    border: 3px solid #ff6347; /* Borde de color que destaca */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de profundidad */
+    max-width: 200px; /* Ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Transiciones suaves para efectos de hover */
+}
+
+.image-row img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen en el hover */
+    border-color: #ff4500; /* Cambia el color del borde en el hover */
+}
